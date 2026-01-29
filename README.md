@@ -39,5 +39,5 @@ Program składa się z następujących funkcji:
 
 Kompilacja (GCC):
 ```bash
-gcc main.c -o reprezentacja
+gcc Kod_projekt_1.c -o reprezentacja
 ```
