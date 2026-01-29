@@ -1,0 +1,19 @@
+# pliki binarne
+*.exe
+*.out
+*.o
+
+# katalog build (jeśli kiedyś dodasz)
+build/
+
+# pliki tymczasowe
+*.log
+*.tmp
+
+# IDE
+.vscode/
+.idea/
+
+# systemowe
+.DS_Store
+Thumbs.db
