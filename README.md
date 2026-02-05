@@ -29,22 +29,22 @@ Poniżej przedstawiono zrzuty ekranu prezentujące działanie programu
 dla wybranych funkcjonalności.
 
 ### Menu programu
-![Menu programu](docs/screenshots/menu.png)
+![Menu programu](Docs/screenshots/menu.png)
 
 ### Reprezentacja liczby typu int
-![Reprezentacja int](docs/screenshots/int_representation.png)
+![Reprezentacja int](Docs/screenshots/int_representation.png)
 
 ### Reprezentacja liczby typu float
-![Reprezentacja float](docs/screenshots/float_representation.png)
+![Reprezentacja float](Docs/screenshots/float_representation.png)
 
 ### Reprezentacja liczby typu double
-![Reprezentacja double](docs/screenshots/double_representation.png)
+![Reprezentacja double](Docs/screenshots/double_representation.png)
 
 ### Odejmowanie w kodzie U2
-![Odejmowanie U2](docs/screenshots/u2_subtraction.png)
+![Odejmowanie U2](Docs/screenshots/u2_subtraction.png)
 
 ### Konwersje float ↔ decimal
-![Konwersje float i decimal](docs/screenshots/conversions.png)
+![Konwersje float i decimal](Docs/screenshots/conversions.png)
 
 ## Kompilacja i uruchomienie
 
