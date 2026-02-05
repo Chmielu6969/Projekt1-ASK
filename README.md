@@ -1,43 +1,54 @@
-# Reprezentacja danych w pamięci – INT, FLOAT, DOUBLE
+# Data Representation in C
+
+Projekt wykonany w ramach przedmiotu  
+**Architektura systemów komputerowych**
 
 ## Opis projektu
-Projekt przedstawia sposób przechowywania danych w pamięci komputera oraz operacje wykonywane na liczbach na poziomie binarnym. Program został napisany w języku C i pokazuje rzeczywistą reprezentację liczb całkowitych oraz zmiennoprzecinkowych w pamięci RAM.
 
-## Zakres funkcjonalny programu
-Program realizuje następujące zadania:
+Program konsolowy napisany w języku C, demonstrujący sposób reprezentacji
+danych liczbowych w pamięci komputera oraz mechanizmy ich przetwarzania.
 
-1. Drukowanie postaci bajtowej danych typu:
-   - `int`
-   - `float`
-   - `double`
+Aplikacja umożliwia analizę:
+- bajtowej i binarnej reprezentacji danych typu `int`, `float` oraz `double`,
+- odejmowania liczb całkowitych w kodzie uzupełnień do dwóch (U2),
+- konwersji pomiędzy formatami `float` oraz `decimal` (`double`)
+  zgodnie ze standardem IEEE 754.
 
-2. Drukowanie postaci binarnej powyższych typów danych (bit po bicie)
+## Funkcjonalności
 
-3. Prezentacja zasady wykonywania odejmowania w kodzie U2 (two’s complement)
+Program umożliwia:
+- wyświetlanie postaci bajtowej danych typu `int`, `float`, `double`,
+- wyświetlanie binarnej reprezentacji liczb całkowitych i zmiennoprzecinkowych,
+- prezentację odejmowania w kodzie U2 krok po kroku,
+- konwersję `float → decimal` oraz `decimal → float`,
+- wykonanie wszystkich operacji jednocześnie dla jednej wartości wejściowej.
 
-4. Prezentacja konwersji:
-   - FLOAT → DEC (odczyt wartości dziesiętnej z reprezentacji binarnej)
-   - DEC → FLOAT (interpretacja surowych bitów jako liczby typu `float`)
+## Przykładowe działanie programu
 
-## Zastosowane techniki
-- dostęp do pamięci za pomocą wskaźników
-- rzutowanie wskaźników (`type punning`)
-- operacje bitowe (`~`, `+`, `>>`, `&`)
-- reprezentacja liczb w kodzie uzupełnień do dwóch (U2)
-- standard IEEE-754 dla liczb zmiennoprzecinkowych
+Poniżej przedstawiono zrzuty ekranu prezentujące działanie programu
+dla wybranych funkcjonalności.
 
-## Struktura programu
-Program składa się z następujących funkcji:
+### Menu programu
+![Menu programu](docs/screenshots/menu.png)
 
-- `print_bytes()` – drukuje bajtową reprezentację zmiennej
-- `print_bits()` – drukuje binarną reprezentację zmiennej
-- `subtraction_U2()` – prezentuje odejmowanie w kodzie U2
-- `float_conversion()` – pokazuje konwersję FLOAT ↔ DEC
-- `main()` – funkcja główna programu
+### Reprezentacja liczby typu int
+![Reprezentacja int](docs/screenshots/int_representation.png)
 
-## Sposób kompilacji i uruchomienia
+### Reprezentacja liczby typu float
+![Reprezentacja float](docs/screenshots/float_representation.png)
 
-Kompilacja (GCC):
+### Reprezentacja liczby typu double
+![Reprezentacja double](docs/screenshots/double_representation.png)
+
+### Odejmowanie w kodzie U2
+![Odejmowanie U2](docs/screenshots/u2_subtraction.png)
+
+### Konwersje float ↔ decimal
+![Konwersje float i decimal](docs/screenshots/conversions.png)
+
+## Kompilacja i uruchomienie
+
 ```bash
-gcc Kod_projekt_1.c -o reprezentacja
+gcc main.c -o data_representation
+./data_representation
 ```
